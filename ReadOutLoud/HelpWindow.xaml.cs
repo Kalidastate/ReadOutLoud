@@ -22,6 +22,7 @@ namespace ReadOutLoud
         public HelpWindow()
         {
             InitializeComponent();
+            Topmost = true;
         }
     }
 }
