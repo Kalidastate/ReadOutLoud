@@ -1,0 +1,32 @@
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\bin\Debug\ReadOutLoud.exe.config
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\bin\Debug\ReadOutLoud.exe
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\bin\Debug\ReadOutLoud.pdb
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\MainWindow.g.cs
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\App.g.cs
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud_MarkupCompile.cache
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud_MarkupCompile.lref
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\MainWindow.baml
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud.g.resources
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud.Properties.Resources.resources
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud.csproj.GenerateResource.Cache
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud.exe
+c:\users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud.pdb
+C:\Users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\ReadOutLoud.csprojResolveAssemblyReference.cache
+C:\Users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\HelpWindow.g.cs
+C:\Users\kalid\onedrive\documents\visual studio 2017\Projects\ReadOutLoud\ReadOutLoud\obj\Debug\HelpWindow.baml
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\bin\Debug\ReadOutLoud.exe.config
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\bin\Debug\ReadOutLoud.exe
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\bin\Debug\ReadOutLoud.pdb
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.csprojResolveAssemblyReference.cache
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\HelpWindow.g.cs
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\MainWindow.g.cs
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\App.g.cs
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud_MarkupCompile.cache
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud_MarkupCompile.lref
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\HelpWindow.baml
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\MainWindow.baml
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.g.resources
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.Properties.Resources.resources
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.csproj.GenerateResource.Cache
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.exe
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.pdb

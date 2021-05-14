@@ -27,99 +27,72 @@ namespace ReadOutLoud
     {
         static SpeechSynthesizer synth = new SpeechSynthesizer();
         static string text;
-        private const int WH_KEYBOARD_LL = 13;
-        private const int WM_KEYDOWN = 0x0100;
-        private static LowLevelKeyboardProc _proc = HookCallback;
-        private static IntPtr _hookID = IntPtr.Zero;
-
-
+        
         public MainWindow()
         {
             InitializeComponent();
-
-            Thread workerThread = new Thread(WorkerThreadDelegate);
-            workerThread.SetApartmentState(ApartmentState.STA);
-            workerThread.Start();
-        }
-
-        private static void WorkerThreadDelegate()
-        {
-            _hookID = SetHook(_proc);
-            System.Windows.Forms.Application.Run();
-            UnhookWindowsHookEx(_hookID);
-        }
-
-        private static IntPtr SetHook(LowLevelKeyboardProc proc)
-        {
-            using (Process curProcess = Process.GetCurrentProcess())
-            using (ProcessModule curModule = curProcess.MainModule)
-            {
-                return SetWindowsHookEx(WH_KEYBOARD_LL, proc, GetModuleHandle(curModule.ModuleName), 0);
-            }
-        }
-
-        private delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
-
-        private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
-        {
-            if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
-            {
-                int vkCode = Marshal.ReadInt32(lParam);
-                
-                if ((Keys)vkCode == Keys.F7)
-                {
-                    try
-                    {
-                        text = System.Windows.Clipboard.GetText(System.Windows.TextDataFormat.Text);
-
-                        Thread speakerThread = new Thread(speakerThreadRoutine);
-                        speakerThread.SetApartmentState(ApartmentState.STA);
-                        speakerThread.Start();
-                        
-                    }
-                    catch (Exception exception)
-                    {
-                        Console.WriteLine(exception.Message);
-                        synth.Speak("Unalble TO Read The Text");
-                    }
-                }
-            }
-
-            return CallNextHookEx(_hookID, nCode, wParam, lParam);
-
+            Topmost = true;
         }
 
         private static void speakerThreadRoutine()
         {
-            // Configure the audio output.   
-            synth.SetOutputToDefaultAudioDevice();
+            try
+            {
+                // Configure the audio output.   
+                synth.SetOutputToDefaultAudioDevice();
 
-            // Speak a string.  
-            synth.Speak(text);
+                // Speak a string.  
+                synth.Speak(text);
+            }
+            catch (Exception e)
+            {
+
+            }
+            
         }
 
-        private void Start_Button_Click(object sender, RoutedEventArgs e)
+        private void Pause_Resume_Button_Click(object sender, RoutedEventArgs e)
         {
-            synth.Resume();
-        }
+            System.Windows.Controls.Button btn = (System.Windows.Controls.Button)sender;
+            String keyword = btn.Content.ToString();
 
-        private void Stop_Button_Click(object sender, RoutedEventArgs e)
+            if (keyword == "Resume")
+            {
+                synth.Resume();
+                Current_State.Content = "Resumed";
+                btn.Content = "Pause";
+            }
+            else
+            {
+                synth.Pause();
+                Current_State.Content = "Paused";
+                btn.Content = "Resume";
+            }
+        }
+        
+        private void Help_Button_Click(object sender, RoutedEventArgs e)
         {
-            synth.Pause();
+            Window helpWindow = new HelpWindow();
+
+            helpWindow.ShowDialog();
         }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        private static extern IntPtr SetWindowsHookEx(int idHook, LowLevelKeyboardProc lpfn, IntPtr hMod, uint dwThreadId);
+        private void Read_Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                text = System.Windows.Clipboard.GetText(System.Windows.TextDataFormat.Text);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool UnhookWindowsHookEx(IntPtr hhk);
-
-        [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        private static extern IntPtr GetModuleHandle(string lpModuleName);
-
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        private static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode,
-        IntPtr wParam, IntPtr lParam);
+                Thread speakerThread = new Thread(speakerThreadRoutine);
+                speakerThread.SetApartmentState(ApartmentState.STA);
+                speakerThread.Start();
+                
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.Message);
+                synth.Speak("Unalble TO Read The Text");
+            }
+        }
     }
 }
