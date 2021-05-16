@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReadOutLoud"
         mc:Ignorable="d"
-        Title="Configure Voice" Height="82.38" Width="397.483" ResizeMode="NoResize">
+        Title="Configure Voice" Height="124.943" Width="397.483" ResizeMode="NoResize">
     <Grid>
-        <ComboBox Name="Voice_Selection" HorizontalAlignment="Left" Margin="86,14,0,0" VerticalAlignment="Top" Width="183" SelectionChanged="Voice_Selection_ComboBox_SelectionChanged"/>
+        <ComboBox Name="Voice_Selection" HorizontalAlignment="Left" Margin="118,14,0,0" VerticalAlignment="Top" Width="183" SelectionChanged="Voice_Selection_ComboBox_SelectionChanged"/>
         <Label Content="Select Voice:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Slider Name="Voice_Speed_Slider" HorizontalAlignment="Left" Margin="118,41,0,0" VerticalAlignment="Top" Width="183" ValueChanged="Voice_Speed_Slider_ValueChanged" Maximum="20" SmallChange="1"/>
+        <Label Name="Voice_Speed" Content="Speed:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="85"/>
 
     </Grid>
 </Window>

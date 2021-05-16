@@ -35,12 +35,21 @@ namespace ReadOutLoud
 
             Voice_Selection.SelectedItem = MainWindow.synth.Voice.Name;
 
+            Voice_Speed_Slider.Value = MainWindow.synth.Rate + 10;
 
+            Voice_Speed.Content = string.Format("Speed: ({0})", Voice_Speed_Slider.Value);
         }
 
         private void Voice_Selection_ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             MainWindow.synth.SelectVoice((string)Voice_Selection.SelectedItem);
+        }
+
+        private void Voice_Speed_Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Voice_Speed.Content = string.Format("Speed: ({0})", Voice_Speed_Slider.Value);
+
+            MainWindow.synth.Rate = (int)Voice_Speed_Slider.Value - 10;
         }
     }
 }
