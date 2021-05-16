@@ -30,3 +30,5 @@ C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy
 C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.csproj.GenerateResource.Cache
 C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.exe
 C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ReadOutLoud.pdb
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ConfigureWindow.g.cs
+C:\Users\kalid\OneDrive\Documents\Visual Studio 2017\Projects\ReadOutLoud - Copy\ReadOutLoud\obj\Debug\ConfigureWindow.baml

@@ -25,7 +25,7 @@ namespace ReadOutLoud
     /// </summary>
     public partial class MainWindow : Window
     {
-        static SpeechSynthesizer synth = new SpeechSynthesizer();
+        public static SpeechSynthesizer synth = new SpeechSynthesizer();
         static string text;
         
         public MainWindow()
@@ -91,8 +91,15 @@ namespace ReadOutLoud
             catch (Exception exception)
             {
                 Console.WriteLine(exception.Message);
-                synth.Speak("Unalble TO Read The Text");
+                synth.Speak("Unalble To Read The Text");
             }
+        }
+
+        private void Configure_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window configureWindow = new ConfigureWindow();
+
+            configureWindow.ShowDialog();
         }
     }
 }

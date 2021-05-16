@@ -1,0 +1,14 @@
+﻿<Window x:Class="ReadOutLoud.ConfigureWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadOutLoud"
+        mc:Ignorable="d"
+        Title="Configure Voice" Height="82.38" Width="397.483" ResizeMode="NoResize">
+    <Grid>
+        <ComboBox Name="Voice_Selection" HorizontalAlignment="Left" Margin="86,14,0,0" VerticalAlignment="Top" Width="183" SelectionChanged="Voice_Selection_ComboBox_SelectionChanged"/>
+        <Label Content="Select Voice:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

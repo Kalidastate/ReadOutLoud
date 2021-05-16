@@ -17,9 +17,10 @@
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
         <Button Content="Pause" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Click="Pause_Resume_Button_Click" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" RenderTransformOrigin="1.703,0.513" Height="20" Width="90"/>
-        <Button Grid.ColumnSpan="2" Content="Help" Margin="185,10,175,0" VerticalAlignment="Top" Click="Help_Button_Click"/>
+        <Button Grid.ColumnSpan="2" Content="Help" Margin="265,10,95,0" VerticalAlignment="Top" Click="Help_Button_Click"/>
         <Button Grid.ColumnSpan="2" Content="Read" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Read_Button_Click"/>
-        <Label Name="Current_State" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="265,7,0,0" VerticalAlignment="Top"/>
+        <Label Name="Current_State" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="345,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.2,0.474"/>
+        <Button Grid.ColumnSpan="2" Content="Configure" HorizontalAlignment="Left" Margin="185,10,0,0" VerticalAlignment="Top" Width="75" Click="Configure_Button_Click"/>
 
     </Grid>
 </Window>
