@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Read Out Loud Help" Height="89.722" Width="306.178" ResizeMode="NoResize">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Select the text, copy it to the clipboard and then press F7." VerticalAlignment="Top" Width="272"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Select the text, copy it to the clipboard and then click Read button." VerticalAlignment="Top" Width="272"/>
     </Grid>
 </Window>
